@@ -1,0 +1,39 @@
+
+
+
+
+
+
+<!-- <p>product-list works!</p>
+<h2>product list</h2>
+
+<div *ngIf = "condition">show div</div>
+<div *ngIf = "products.length > 0; then showTableBlock; else noData"></div>
+        <ng-template #showTableBlock>
+<table>
+    <thead>
+        <th>Id</th>
+        <th>name</th>
+        <th>description</th>
+        <th>type</th>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let product of products" >
+           <td>{{product.id}}</td>
+           <td>{{product.name}}</td>
+           <td>{{product.description}}</td>
+           <td>{{product.type}}</td>
+           </tr>
+    </tbody>
+</table>
+</ng-template>
+
+<ng-template #noData>No Data</ng-template> -->
+<ng-container *ngIf="true">
+<div [ngSwitch]="someValue">
+    <div *ngSwitchCase = "'value1'">content for value1</div>
+    <div *ngSwitchCase = "'value2'">content for value2</div>
+    <div *ngSwitchCae = "'value3'">content for value3</div>
+
+</div>
+</ng-container>

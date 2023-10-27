@@ -3,9 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { MobilesComponent } from './mobiles/mobiles.component';
+import { LaptopsComponent } from './laptops/laptops.component';
 
 const routes: Routes = [
-  {path:'products', component:ProductListComponent },
+  {path:'products', component:ProductListComponent, 
+   children:[
+    {path:'Mobiles',component:MobilesComponent},
+    {path:'Laptop',component:LaptopsComponent}
+   ]
+   },
   {path:'home', component: HomeComponent}
 ];
 

@@ -1,9 +1,11 @@
-
-
-
-
-
-
+<div>
+    <ul>
+        <li *ngFor="let category of categories">
+            <a [routerLink]="[category]" [queryParams]="{categories:category}">{{category}}</a>
+        </li>
+    </ul>
+</div>
+  <router-outlet></router-outlet>
 <!-- <p>product-list works!</p>
 <h2>product list</h2>
 
@@ -29,11 +31,11 @@
 </ng-template>
 
 <ng-template #noData>No Data</ng-template> -->
-<ng-container *ngIf="true">
+<!-- <ng-container *ngIf="true">
 <div [ngSwitch]="someValue">
     <div *ngSwitchCase = "'value1'">content for value1</div>
     <div *ngSwitchCase = "'value2'">content for value2</div>
     <div *ngSwitchCae = "'value3'">content for value3</div>
 
 </div>
-</ng-container>
+</ng-container> -->

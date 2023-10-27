@@ -16,9 +16,9 @@ export class ProductListComponent {
 
   // condition:boolean= true
 
-  someValue = "value1";
+  // someValue = "value1";
 
-categories:string[]=["Mobile","Laptop","Furniture"]
+categories:string[]=["Mobiles","Laptop","Furniture","TV"]
 
 
 }
